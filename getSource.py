@@ -159,9 +159,12 @@ class GetSource:
                     print("this 100 pages cost time: {}".format(datetime.datetime.now() - dt))
                     dt = datetime.datetime.now()
 
+# collect phishing data. From the first line of verified_online.csv, to the end of line 10.
+# index file save in phish_idx.txt
 # p = GetSource('verified_online.csv', 19820, 20000, 'phish_idx.txt')
 # p.phish_main()
-l = GetSource('linklist.txt', 1, 2, 'legi_idx.txt')
+
+l = GetSource('alexa_links.txt', 1, 2, 'legi_idx.txt')
 l.legi_main()
 
 
